@@ -1,0 +1,101 @@
+header {
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6.5rem 2rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-content {
+  text-align: left;
+  display: block;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header h2 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+header p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #c0c0c0;
+}
+
+nav{
+  display: block;
+  margin-top: 128px;
+}
+
+.nav-list{
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+}
+
+.nav-list li {
+  margin: 0.5rem 0;
+}
+
+.nav-list li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-indicator {
+  background: #c0c0c0;
+  height: 2px;
+  width: 1.5rem;
+  margin-right: 8px;
+  transition: width 0.3s, background-color 0.3s, margin-right 0.3s;
+}
+
+.nav-list li a:hover .nav-indicator {
+  width: 4rem;
+  margin-right: 12px;
+  background: white;
+}
+
+.nav-list li a.active .nav-indicator {
+  width: 4rem;
+  margin-right: 12px;
+  background: white;
+}
+
+.nav-list li a:hover {
+  color: #c0c0c0;
+}
+
+.nav-list li a.active {
+  color: white;
+}
+
+.social-list{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+}
+
+.social-list li {
+  margin: 0 1rem;
+}
+
+.social-list li a {
+  color: white;
+  text-decoration: none;
+}

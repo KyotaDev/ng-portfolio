@@ -1,0 +1,64 @@
+<header>
+  <div class="header-content">
+    <h1>Luis Homero</h1>
+    <h2>Desarrollador de Software</h2>
+    <p>Apasionado por la tecnología y el desarrollo de soluciones.</p>
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a
+            href="#about"
+            [ngClass]="{'active': activeLink === '#about'}"
+            (click)="setActive('#about')">
+            <span class="nav-indicator"></span>
+            <span>SOBRE MI</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#experience"
+            [ngClass]="{'active': activeLink === '#experience'}"
+            (click)="setActive('#experience')">
+            <span class="nav-indicator"></span>
+            <span>EXPERIENCIA</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#skills"
+            [ngClass]="{'active': activeLink === '#skills'}"
+            (click)="setActive('#skills')">
+            <span class="nav-indicator"></span>
+            <span>HABILIDADES</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#projects"
+            [ngClass]="{'active': activeLink === '#projects'}"
+            (click)="setActive('#projects')">
+            <span class="nav-indicator"></span>
+            <span>PROYECTOS</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <ul class="social-list">
+    <li>
+      <a href="https://www.linkedin.com/in/luis-homero/" target="_blank">
+        <img src="assets/icons/linkedin.svg" alt="LinkedIn" width="24px"/>
+      </a>
+    </li>
+    <li>
+      <a href="" target="_blank">
+        <img src="assets/icons/github.svg" alt="GitHub" width="24px"/>
+      </a>
+    </li>
+    <li>
+      <a href="https://instagram/kyotadev" target="_blank">
+        <img src="assets/icons/instagram.svg" alt="Instagram" width="24px"/>
+      </a>
+    </li>
+  </ul>
+</header>
