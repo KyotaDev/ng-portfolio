@@ -1,0 +1,69 @@
+:host {
+  display: block;
+  font-family: Arial, sans-serif;
+  color: #f0f0f0;
+  padding: 20px;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.experience {
+  display: flex;
+  gap: 20px;
+}
+
+.experience-date {
+  flex: 0 0 30%;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+.experience-details {
+  flex: 0 0 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.experience-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.experience-company {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+.experience-company a{
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.experience-details p {
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.experience-skills span {
+  display: inline-block;
+  background-color: rgba(0, 191, 255, 0.2); /* Celeste semi-transparente */
+  color: #00bfff; /* Celeste brillante */
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 15px;
+  text-transform: capitalize;
+}

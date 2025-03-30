@@ -1,1 +1,18 @@
-<p>experience works!</p>
+<section>
+  <div class="experience" *ngFor="let experience of experiences">
+    <div class="experience-date">
+      {{ experience.startDate }} - {{ experience.endDate }}
+    </div>
+    <div class="experience-details">
+      <span class="experience-title">{{ experience.position }}</span>
+      <span class="experience-company"><a href="{{ experience.companyWeb }}">{{ experience.company }}</a></span>
+      <p>
+        {{ experience.description }}
+      </p>
+
+      <div class="experience-skills">
+        <span *ngFor="let skill of experience.skills">{{ skill }}</span>
+      </div>
+    </div>
+  </div>
+</section>

@@ -10,4 +10,18 @@
 
 app-header{
   width: 100%;
+  position: sticky;
+}
+
+app-main{
+  overflow-y: auto;
+}
+
+app-main::-webkit-scrollbar {
+  display: none;
+}
+
+app-main {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
